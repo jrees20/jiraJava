@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply border-neutral-200 dark:border-dark-neutral-200;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-neutral-50 text-neutral-500 dark:bg-dark-neutral-50 dark:text-dark-neutral-500;
+}
+
+/* Heading styles */
+h1 {
+  @apply text-heading-1;
+}
+
+h2 {
+  @apply text-heading-2;
+}
+
+h3 {
+  @apply text-heading-3;
+}
+
+h4 {
+  @apply text-heading-4;
+}
+
+/* Code block styles */
+code {
+  @apply font-mono text-code bg-neutral-100 dark:bg-dark-neutral-100 px-1 rounded;
+}
+
+pre {
+  @apply bg-neutral-100 dark:bg-dark-neutral-100 p-4 rounded-lg overflow-x-auto;
+}
+
+pre code {
+  @apply bg-transparent p-0;
+}
+
+/* Focus ring styles */
+@layer components {
+  .focus-ring {
+    @apply outline-none ring-2 ring-offset-2 ring-primary dark:ring-offset-dark-neutral-50;
+  }
+
+  .focus-ring:focus {
+    @apply ring-2 ring-offset-2 ring-primary dark:ring-offset-dark-neutral-50;
+  }
+
+  /* Button reset */
+  button {
+    @apply transition-colors duration-150 ease-in-out;
+  }
+
+  /* Link styles */
+  a {
+    @apply text-primary hover:underline focus-ring rounded;
+  }
+
+  /* Animation utilities */
+  @keyframes fadeIn {
+    from {
+      @apply opacity-0;
+    }
+    to {
+      @apply opacity-100;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      @apply opacity-0 -translate-y-2;
+    }
+    to {
+      @apply opacity-100 translate-y-0;
+    }
+  }
+
+  .animate-fadeIn {
+    @apply animation-fadeIn duration-200 ease-out;
+  }
+
+  .animate-slideIn {
+    @apply animation-slideIn duration-200 ease-out;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neutral-100 dark:bg-dark-neutral-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-300 dark:bg-dark-neutral-300 rounded-lg hover:bg-neutral-400 dark:hover:bg-dark-neutral-400;
+}
+
+/* Reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    @apply !transition-none !animate-none;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
