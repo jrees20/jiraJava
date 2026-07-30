@@ -5,8 +5,9 @@ import { EmailDetailModal } from '@/components/EmailDetailModal'
 import { JiraSection } from '@/components/JiraSection'
 import { JiraDetailModal } from '@/components/JiraDetailModal'
 import { KPICard } from '@/components/KPICard'
+import { OvernightSummaryCard } from '@/components/OvernightSummaryCard'
 import { OutlookActivityItem, JiraActivityItem } from '@/types'
-import { getMockEmails, getMockJiraActivity, mockKPIMetrics } from '@/services/mockData'
+import { getMockEmails, getMockJiraActivity, mockKPIMetrics, mockOvernightSummary } from '@/services/mockData'
 
 interface PageProps {
   isDarkMode?: boolean
@@ -91,62 +92,14 @@ export default function Home({ isDarkMode, toggleTheme }: PageProps) {
 
         {/* Main Content */}
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-          {/* Hero Section */}
-          <section className="bg-white dark:bg-dark-neutral-100 rounded-lg shadow-elevation-2 p-6 border border-neutral-200 dark:border-dark-neutral-200">
-            <h2 className="text-heading-2 mb-4">What Changed Overnight</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-              <div className="bg-neutral-50 dark:bg-dark-neutral-50 p-4 rounded">
-                <p className="text-small text-neutral-400 dark:text-dark-neutral-300">Jira Items</p>
-                <p className="text-heading-3">3</p>
-              </div>
-              <div className="bg-neutral-50 dark:bg-dark-neutral-50 p-4 rounded">
-                <p className="text-small text-neutral-400 dark:text-dark-neutral-300">Escalations</p>
-                <p className="text-heading-3">2</p>
-              </div>
-              <div className="bg-neutral-50 dark:bg-dark-neutral-50 p-4 rounded">
-                <p className="text-small text-neutral-400 dark:text-dark-neutral-300">Resolved</p>
-                <p className="text-heading-3">5</p>
-              </div>
-              <div className="bg-neutral-50 dark:bg-dark-neutral-50 p-4 rounded">
-                <p className="text-small text-neutral-400 dark:text-dark-neutral-300">Critical Emails</p>
-                <p className="text-heading-3">1</p>
-              </div>
-            </div>
-
-            <div className="bg-danger bg-opacity-10 dark:bg-danger-dark dark:bg-opacity-10 border-l-4 border-danger dark:border-danger-dark p-4 rounded mb-6">
-              <p className="font-semibold text-neutral-500 dark:text-dark-neutral-400">Biggest Risk:</p>
-              <p className="text-body text-neutral-400 dark:text-dark-neutral-300 mt-2">
-                ANB Sprint 1 integration testing is blocked by API access. Assign @Sarah or @Mike ASAP.
-              </p>
-            </div>
-
-            <div>
-              <p className="font-semibold text-neutral-500 dark:text-dark-neutral-400 mb-3">Recommended First Actions:</p>
-              <ol className="space-y-2">
-                <li className="text-body text-neutral-400 dark:text-dark-neutral-300">
-                  1. Review DAIS-123 (5 min)
-                </li>
-                <li className="text-body text-neutral-400 dark:text-dark-neutral-300">
-                  2. Respond to Charlie's design question (10 min)
-                </li>
-                <li className="text-body text-neutral-400 dark:text-dark-neutral-300">
-                  3. Accept Architecture Review meeting (2 min)
-                </li>
-              </ol>
-            </div>
-
-            <div className="mt-6 flex items-center justify-between text-small text-neutral-300 dark:text-dark-neutral-400">
-              <p>⟲ Last updated: 8:15 AM (just now)</p>
-              <div className="flex space-x-3">
-                <button className="px-4 py-2 bg-primary text-white rounded hover:opacity-90 transition-opacity">
-                  Refresh
-                </button>
-                <button className="px-4 py-2 border border-neutral-200 dark:border-dark-neutral-200 rounded hover:bg-neutral-50 dark:hover:bg-dark-neutral-50 transition-colors">
-                  View Details
-                </button>
-              </div>
-            </div>
-          </section>
+          {/* Hero Section - What Changed Overnight */}
+          <OvernightSummaryCard
+            summary={mockOvernightSummary}
+            isLoading={false}
+            onRefresh={() => {
+              // TODO: Refresh overnight summary
+            }}
+          />
 
           {/* KPI Grid */}
           <section>
