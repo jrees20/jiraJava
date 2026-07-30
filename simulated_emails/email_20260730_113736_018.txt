@@ -1,0 +1,22 @@
+From: ops@company.com
+To: dev-team@company.com
+Date: Thu, 30 Jul 2026 11:37:36 
+Subject: Company Event: Team Building Activity on July 30, 2026
+Message-ID: <misc_1785429456@company.com>
+
+Dear David Lee,
+
+Thank you for your submission. We wanted to confirm receipt and provide the following information:
+
+Status: Pending
+Reference: REF-914289
+Next Steps: Awaiting your confirmation
+
+Please reach out if you have any questions.
+
+Best,
+Operations
+
+---
+This is an automated or administrative message.
+Company Communications

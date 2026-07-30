@@ -1,0 +1,37 @@
+From: jira-notifications@company.com
+To: dev-team@company.com
+Date: Wed, 29 Jul 2026 18:53:34 
+Subject: [PROJ-1646] Update API documentation
+Message-ID: <PROJ1646@jira.company.com>
+
+Jira Ticket Notification
+========================
+
+Ticket ID: PROJ-1646
+Summary: Update API documentation
+Status: Closed
+Priority: Highest
+Assignee: Sarah Johnson
+Reporter: Emma Brown
+
+Description:
+User reported an issue with the current workflow.
+
+--- Comment by David Lee at Fri, 31 Jul 2026 00:53:34 ---
+This needs to be prioritized higher.
+
+--- Comment by Sarah Johnson at Fri, 31 Jul 2026 15:53:34 ---
+I've updated the documentation accordingly.
+
+--- Comment by Emma Brown at Fri, 31 Jul 2026 17:53:34 ---
+This needs to be prioritized higher.
+
+--- Comment by Jennifer Wilson at Fri, 31 Jul 2026 14:53:34 ---
+This is related to the previous ticket we discussed.
+
+--- Comment by John Smith at Thu, 30 Jul 2026 06:53:34 ---
+Can someone review the changes I pushed?
+
+---
+This is an automated notification from Jira. Do not reply to this email.
+Visit: https://jira.company.com/browse/PROJ-1646

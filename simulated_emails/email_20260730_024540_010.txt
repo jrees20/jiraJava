@@ -1,0 +1,30 @@
+From: jennifer.wilson@company.com
+To: all-staff@company.com
+Date: Thu, 30 Jul 2026 02:45:40 
+Subject: Meeting Request: Company-wide Learning: Database Optimization
+Message-ID: <mtg_1785397540@calendar.company.com>
+
+Meeting Request
+===============
+
+Organizer: Mike Chen
+Title: Company-wide Learning: Database Optimization
+Type: Company-wide Learning Session
+
+Date: Friday, July 31, 2026
+Time: 09:00 AM - 09:30 AM
+Duration: 30 minutes
+
+Description:
+Join us for an educational session where we'll dive deep into industry best practices and technical knowledge sharing.
+
+Attendees:
+all-staff@company.com
+
+Calendar Details:
+Location: Virtual (Zoom link will be sent separately)
+Meeting Link: https://zoom.company.com/meeting/87685
+
+---
+This is a calendar invitation. Please reply to accept or decline.
+Company Calendar System

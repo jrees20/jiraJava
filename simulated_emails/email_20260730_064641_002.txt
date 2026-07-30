@@ -1,0 +1,31 @@
+From: jira-notifications@company.com
+To: dev-team@company.com
+Date: Thu, 30 Jul 2026 06:46:41 
+Subject: [PROJ-8154] Fix mobile responsiveness on inventory page
+Message-ID: <PROJ8154@jira.company.com>
+
+Jira Ticket Notification
+========================
+
+Ticket ID: PROJ-8154
+Summary: Fix mobile responsiveness on inventory page
+Status: In Progress
+Priority: High
+Assignee: Sarah Johnson
+Reporter: Jennifer Wilson
+
+Description:
+Integration test failing in CI/CD pipeline.
+
+--- Comment by Sarah Johnson at Sat, 01 Aug 2026 02:46:41 ---
+Can someone review the changes I pushed?
+
+--- Comment by John Smith at Thu, 30 Jul 2026 15:46:41 ---
+@Jennifer The customer is waiting on this fix.
+
+--- Comment by Mike Chen at Fri, 31 Jul 2026 21:46:41 ---
+The fix is ready for testing in staging. @Jennifer - can you review this?
+
+---
+This is an automated notification from Jira. Do not reply to this email.
+Visit: https://jira.company.com/browse/PROJ-8154

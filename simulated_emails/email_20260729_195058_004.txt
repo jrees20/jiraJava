@@ -1,0 +1,34 @@
+From: jira-notifications@company.com
+To: dev-team@company.com
+Date: Wed, 29 Jul 2026 19:50:58 
+Subject: [PROJ-9313] Update payment processing integration
+Message-ID: <PROJ9313@jira.company.com>
+
+Jira Ticket Notification
+========================
+
+Ticket ID: PROJ-9313
+Summary: Update payment processing integration
+Status: Closed
+Priority: Low
+Assignee: Jennifer Wilson
+Reporter: David Lee
+
+Description:
+User reported an issue with the current workflow.
+
+--- Comment by David Lee at Wed, 29 Jul 2026 23:50:58 ---
+@Jennifer Can someone review the changes I pushed?
+
+--- Comment by Mike Chen at Thu, 30 Jul 2026 20:50:58 ---
+This needs to be prioritized higher.
+
+--- Comment by David Lee at Thu, 30 Jul 2026 10:50:58 ---
+@Jennifer I've started working on this. Should have an update by EOD.
+
+--- Comment by Mike Chen at Thu, 30 Jul 2026 21:50:58 ---
+This is related to the previous ticket we discussed. @Jennifer - can you review this?
+
+---
+This is an automated notification from Jira. Do not reply to this email.
+Visit: https://jira.company.com/browse/PROJ-9313

@@ -1,0 +1,30 @@
+From: jim@company.com
+To: Emma Brown, Sarah Johnson, Sarah Johnson, Sarah Johnson
+Date: Thu, 30 Jul 2026 11:26:13 
+Subject: Meeting Request: Architecture Discussion - Sarah Johnson
+Message-ID: <mtg_1785428773@calendar.company.com>
+
+Meeting Request
+===============
+
+Organizer: Jim (Manager)
+Title: Architecture Discussion - Sarah Johnson
+Type: Architecture Discussion
+
+Date: Monday, August 03, 2026
+Time: 02:00 PM - 03:00 PM
+Duration: 60 minutes
+
+Description:
+Let's sync up and discuss progress on our current projects and upcoming initiatives.
+
+Attendees:
+Emma Brown, Sarah Johnson, Sarah Johnson, Sarah Johnson
+
+Calendar Details:
+Location: Virtual (Zoom link will be sent separately)
+Meeting Link: https://zoom.company.com/meeting/60527
+
+---
+This is a calendar invitation. Please reply to accept or decline.
+Company Calendar System

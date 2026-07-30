@@ -1,0 +1,28 @@
+From: jira-notifications@company.com
+To: dev-team@company.com
+Date: Thu, 30 Jul 2026 10:02:58 
+Subject: [PROJ-3722] Add automated testing suite
+Message-ID: <PROJ3722@jira.company.com>
+
+Jira Ticket Notification
+========================
+
+Ticket ID: PROJ-3722
+Summary: Add automated testing suite
+Status: In Review
+Priority: Highest
+Assignee: David Lee
+Reporter: Sarah Johnson
+
+Description:
+Integration test failing in CI/CD pipeline.
+
+--- Comment by Mike Chen at Fri, 31 Jul 2026 07:02:58 ---
+I found the root cause - it's in the API layer.
+
+--- Comment by Mike Chen at Thu, 30 Jul 2026 20:02:58 ---
+This is related to the previous ticket we discussed.
+
+---
+This is an automated notification from Jira. Do not reply to this email.
+Visit: https://jira.company.com/browse/PROJ-3722

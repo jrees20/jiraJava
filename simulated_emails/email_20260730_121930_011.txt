@@ -1,0 +1,30 @@
+From: emma.brown@company.com
+To: all-staff@company.com
+Date: Thu, 30 Jul 2026 12:19:30 
+Subject: Meeting Request: Company-wide Learning: API Design Patterns
+Message-ID: <mtg_1785431970@calendar.company.com>
+
+Meeting Request
+===============
+
+Organizer: Sarah Johnson
+Title: Company-wide Learning: API Design Patterns
+Type: Company-wide Learning Session
+
+Date: Friday, July 31, 2026
+Time: 02:00 PM - 03:00 PM
+Duration: 60 minutes
+
+Description:
+Join us for an educational session where we'll dive deep into industry best practices and technical knowledge sharing.
+
+Attendees:
+all-staff@company.com
+
+Calendar Details:
+Location: Virtual (Zoom link will be sent separately)
+Meeting Link: https://zoom.company.com/meeting/94487
+
+---
+This is a calendar invitation. Please reply to accept or decline.
+Company Calendar System

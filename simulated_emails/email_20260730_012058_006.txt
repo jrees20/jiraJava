@@ -1,0 +1,34 @@
+From: jira-notifications@company.com
+To: dev-team@company.com
+Date: Thu, 30 Jul 2026 01:20:58 
+Subject: [PROJ-9480] Add export functionality to reports
+Message-ID: <PROJ9480@jira.company.com>
+
+Jira Ticket Notification
+========================
+
+Ticket ID: PROJ-9480
+Summary: Add export functionality to reports
+Status: In Review
+Priority: Medium
+Assignee: Sarah Johnson
+Reporter: David Lee
+
+Description:
+Documentation update required for API changes.
+
+--- Comment by Jennifer Wilson at Thu, 30 Jul 2026 04:20:58 ---
+The fix is ready for testing in staging.
+
+--- Comment by Sarah Johnson at Fri, 31 Jul 2026 10:20:58 ---
+I've started working on this. Should have an update by EOD.
+
+--- Comment by Emma Brown at Fri, 31 Jul 2026 15:20:58 ---
+Great catch! Let me investigate further.
+
+--- Comment by Mike Chen at Thu, 30 Jul 2026 09:20:58 ---
+This is related to the previous ticket we discussed.
+
+---
+This is an automated notification from Jira. Do not reply to this email.
+Visit: https://jira.company.com/browse/PROJ-9480

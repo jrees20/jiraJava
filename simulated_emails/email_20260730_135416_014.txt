@@ -1,0 +1,30 @@
+From: jim@company.com
+To: Sarah Johnson, Jennifer Wilson, Sarah Johnson
+Date: Thu, 30 Jul 2026 13:54:16 
+Subject: Meeting Request: Client Sync - David Lee
+Message-ID: <mtg_1785437656@calendar.company.com>
+
+Meeting Request
+===============
+
+Organizer: Jim (Manager)
+Title: Client Sync - David Lee
+Type: Client Sync
+
+Date: Friday, July 31, 2026
+Time: 04:00 PM - 04:30 PM
+Duration: 30 minutes
+
+Description:
+Let's sync up and discuss progress on our current projects and upcoming initiatives.
+
+Attendees:
+Sarah Johnson, Jennifer Wilson, Sarah Johnson
+
+Calendar Details:
+Location: Virtual (Zoom link will be sent separately)
+Meeting Link: https://zoom.company.com/meeting/94060
+
+---
+This is a calendar invitation. Please reply to accept or decline.
+Company Calendar System

@@ -1,0 +1,31 @@
+From: jira-notifications@company.com
+To: dev-team@company.com
+Date: Wed, 29 Jul 2026 20:06:01 
+Subject: [PROJ-7878] Update dashboard filtering logic
+Message-ID: <PROJ7878@jira.company.com>
+
+Jira Ticket Notification
+========================
+
+Ticket ID: PROJ-7878
+Summary: Update dashboard filtering logic
+Status: Closed
+Priority: High
+Assignee: Jennifer Wilson
+Reporter: Mike Chen
+
+Description:
+Customer requested this feature for their workflow.
+
+--- Comment by Sarah Johnson at Fri, 31 Jul 2026 04:06:01 ---
+@Jennifer This is related to the previous ticket we discussed.
+
+--- Comment by David Lee at Fri, 31 Jul 2026 12:06:01 ---
+@Jennifer I've updated the documentation accordingly.
+
+--- Comment by Mike Chen at Wed, 29 Jul 2026 21:06:01 ---
+This needs to be prioritized higher. @Jennifer - can you review this?
+
+---
+This is an automated notification from Jira. Do not reply to this email.
+Visit: https://jira.company.com/browse/PROJ-7878
