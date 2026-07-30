@@ -4,8 +4,9 @@ import { EmailSection } from '@/components/EmailSection'
 import { EmailDetailModal } from '@/components/EmailDetailModal'
 import { JiraSection } from '@/components/JiraSection'
 import { JiraDetailModal } from '@/components/JiraDetailModal'
+import { KPICard } from '@/components/KPICard'
 import { OutlookActivityItem, JiraActivityItem } from '@/types'
-import { getMockEmails, getMockJiraActivity } from '@/services/mockData'
+import { getMockEmails, getMockJiraActivity, mockKPIMetrics } from '@/services/mockData'
 
 interface PageProps {
   isDarkMode?: boolean
@@ -149,29 +150,16 @@ export default function Home({ isDarkMode, toggleTheme }: PageProps) {
 
           {/* KPI Grid */}
           <section>
-            <h2 className="text-heading-2 mb-4">Executive Dashboard</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {[
-                { title: "Today's Attention", value: 78, trend: 'UP', percent: 12 },
-                { title: 'Open Actions', value: 8, trend: 'STABLE', percent: 0 },
-                { title: 'Critical Items', value: 1, trend: 'DOWN', percent: -5 },
-                { title: 'Aging Emails', value: 2, trend: 'UP', percent: 33 },
-              ].map((kpi, idx) => (
-                <div
-                  key={idx}
-                  className="bg-white dark:bg-dark-neutral-100 rounded-lg shadow-elevation-2 p-6 border border-neutral-200 dark:border-dark-neutral-200 hover:shadow-elevation-3 transition-shadow cursor-pointer"
-                >
-                  <p className="text-small text-neutral-400 dark:text-dark-neutral-300 mb-4">{kpi.title}</p>
-                  <div className="text-heading-1 text-neutral-500 dark:text-dark-neutral-500 mb-2">{kpi.value}</div>
-                  <div className="flex items-center">
-                    <span className={kpi.trend === 'UP' ? 'text-danger dark:text-danger-dark' : kpi.trend === 'DOWN' ? 'text-success dark:text-success-dark' : 'text-neutral-400'}>
-                      {kpi.trend === 'UP' ? '🔺' : kpi.trend === 'DOWN' ? '🔻' : '➡️'}
-                    </span>
-                    <span className="ml-2 text-small text-neutral-400 dark:text-dark-neutral-300">
-                      {kpi.percent > 0 ? '+' : ''}{kpi.percent}%
-                    </span>
-                  </div>
-                </div>
+            <h2 className="text-heading-2 mb-6">Executive Dashboard</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+              {mockKPIMetrics.map((metric) => (
+                <KPICard
+                  key={metric.id}
+                  metric={metric}
+                  onClick={() => {
+                    // TODO: Navigate to drill-down view
+                  }}
+                />
               ))}
             </div>
           </section>

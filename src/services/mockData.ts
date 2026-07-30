@@ -162,6 +162,8 @@ export const mockJiraActivity: JiraActivityItem[] = [
     },
     changedAt: eightHoursAgo.toISOString(),
     url: 'https://jira.atlassian.net/browse/DAIS-123',
+    mentionsUser: true,
+    userMentionContext: 'Assigned to you for debugging',
   },
   {
     issueKey: 'DAIS-987',
@@ -203,11 +205,13 @@ export const mockEmails: OutlookActivityItem[] = [
     type: 'CRITICAL_EMAIL',
     severity: 'CRITICAL',
     reason: 'Flagged and requires immediate action',
+    mentionsUser: true,
+    userMentionContext: 'You were specifically mentioned for approval sign-off',
     email: {
       id: 'outlook-email-1',
       subject: 'ACTION REQUIRED: Q3 Roadmap Approval 🚩',
       bodyPreview:
-        'We need your approval on the Q3 roadmap update. The engineering and product teams are waiting for your sign-off before we can finalize the timeline and resource allocation. Please review the attached document and confirm by EOD.',
+        'We need your approval on the Q3 roadmap update. @You - we need your sign-off before we can finalize the timeline and resource allocation. Please review the attached document and confirm by EOD.',
       from: {
         emailAddress: {
           address: 'jennifer.wong@company.com',

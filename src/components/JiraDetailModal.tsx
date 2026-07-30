@@ -53,6 +53,22 @@ const getChangeTypeLabel = (changeType: string) => {
   }
 }
 
+const getPriorityHeaderColor = (priority: string) => {
+  switch (priority) {
+    case 'BLOCKER':
+    case 'CRITICAL':
+      return 'bg-gradient-to-r from-danger via-danger/80 to-danger/60 dark:from-danger-dark dark:via-danger-dark/80 dark:to-danger-dark/60'
+    case 'HIGH':
+      return 'bg-gradient-to-r from-warning via-warning/80 to-warning/60 dark:from-warning-dark dark:via-warning-dark/80 dark:to-warning-dark/60'
+    case 'MEDIUM':
+      return 'bg-gradient-to-r from-primary via-primary/80 to-primary/60 dark:from-primary dark:via-primary/80 dark:to-primary/60'
+    case 'LOW':
+      return 'bg-gradient-to-r from-success via-success/80 to-success/60 dark:from-success-dark dark:via-success-dark/80 dark:to-success-dark/60'
+    default:
+      return 'bg-gradient-to-r from-primary via-primary/80 to-primary/60'
+  }
+}
+
 export const JiraDetailModal: React.FC<JiraDetailModalProps> = ({
   item,
   isOpen,
@@ -85,24 +101,21 @@ export const JiraDetailModal: React.FC<JiraDetailModalProps> = ({
       <div className="fixed inset-0 z-50 flex items-start justify-center pt-12 pointer-events-none">
         <div className="bg-white dark:bg-dark-neutral-100 rounded-lg shadow-elevation-4 max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto pointer-events-auto">
           {/* Header */}
-          <div className="sticky top-0 bg-white dark:bg-dark-neutral-100 border-b border-neutral-200 dark:border-dark-neutral-200 p-6 flex items-start justify-between">
+          <div className={`sticky top-0 ${getPriorityHeaderColor(item.priority)} text-white p-6 flex items-start justify-between`}>
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-3 mb-2">
                 <span className="text-2xl">{getChangeTypeIcon(item.changeType)}</span>
-                <h2 className="text-heading-2 text-neutral-500 dark:text-dark-neutral-500">
+                <h2 className="text-heading-2 text-white">
                   {item.issueKey}
                 </h2>
-                <span className={`px-3 py-1 rounded-full text-small font-semibold ${getPriorityColor(item.priority)}`}>
-                  {item.priority}
-                </span>
               </div>
-              <p className="text-body text-neutral-400 dark:text-dark-neutral-300 line-clamp-2">
+              <p className="text-body text-white/80 line-clamp-2">
                 {item.summary}
               </p>
             </div>
             <button
               onClick={onClose}
-              className="ml-4 text-neutral-400 dark:text-dark-neutral-400 hover:text-neutral-500 dark:hover:text-dark-neutral-300 text-2xl leading-none"
+              className="ml-4 text-white/70 hover:text-white text-2xl leading-none transition-colors"
               aria-label="Close"
             >
               ×

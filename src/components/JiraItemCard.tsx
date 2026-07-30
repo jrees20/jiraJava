@@ -37,6 +37,21 @@ const getBorderColor = (changeType: string) => {
   }
 }
 
+const getBackgroundColor = (changeType: string) => {
+  switch (changeType) {
+    case 'NEW':
+      return 'bg-gradient-to-br from-success/5 via-white to-white dark:from-success-dark/5 dark:via-dark-neutral-100 dark:to-dark-neutral-100'
+    case 'STATUS_CHANGE':
+      return 'bg-gradient-to-br from-primary/5 via-white to-white dark:from-primary/5 dark:via-dark-neutral-100 dark:to-dark-neutral-100'
+    case 'BLOCKER':
+      return 'bg-gradient-to-br from-danger/5 via-white to-white dark:from-danger-dark/5 dark:via-dark-neutral-100 dark:to-dark-neutral-100'
+    case 'CLOSED':
+      return 'bg-gradient-to-br from-neutral-100 via-white to-white dark:from-dark-neutral-200 dark:via-dark-neutral-100 dark:to-dark-neutral-100'
+    default:
+      return 'bg-white dark:bg-dark-neutral-100'
+  }
+}
+
 const getChangeTypeIcon = (changeType: string) => {
   switch (changeType) {
     case 'NEW':
@@ -67,7 +82,7 @@ export const JiraItemCard: React.FC<JiraItemCardProps> = ({ item, onClick }) => 
   return (
     <button
       onClick={onClick}
-      className={`w-full text-left bg-white dark:bg-dark-neutral-100 rounded p-4 hover:shadow-elevation-1 transition-all hover:translate-x-0.5 ${getBorderColor(item.changeType)}`}
+      className={`w-full text-left rounded-lg p-4 hover:shadow-elevation-2 transition-all hover:translate-x-0.5 border border-neutral-200 dark:border-dark-neutral-200 ${getBorderColor(item.changeType)} ${getBackgroundColor(item.changeType)}`}
     >
       {/* Header: Key + Priority */}
       <div className="flex items-start justify-between mb-2">
@@ -77,10 +92,17 @@ export const JiraItemCard: React.FC<JiraItemCardProps> = ({ item, onClick }) => 
             {item.issueKey}
           </h4>
         </div>
-        <span className={`px-2.5 py-1 rounded text-small font-semibold whitespace-nowrap ml-2 ${getPriorityColor(item.priority)}`}>
+        <span className={`px-2.5 py-1 rounded-full text-small font-semibold whitespace-nowrap ml-2 ${getPriorityColor(item.priority)}`}>
           {item.priority}
         </span>
       </div>
+
+      {/* User mention badge */}
+      {item.mentionsUser && (
+        <div className="mb-2 text-small font-semibold text-primary dark:text-primary bg-primary/10 dark:bg-primary/10 px-2 py-1 rounded inline-block">
+          👤 You were mentioned
+        </div>
+      )}
 
       {/* Status Change or Summary */}
       {item.fromStatus && item.toStatus ? (

@@ -7,6 +7,17 @@ interface EmailDetailModalProps {
   onClose: () => void
 }
 
+const getSeverityHeaderColor = (severity: string) => {
+  switch (severity) {
+    case 'CRITICAL':
+      return 'bg-gradient-to-r from-danger via-danger/80 to-danger/60 dark:from-danger-dark dark:via-danger-dark/80 dark:to-danger-dark/60'
+    case 'WARNING':
+      return 'bg-gradient-to-r from-warning via-warning/80 to-warning/60 dark:from-warning-dark dark:via-warning-dark/80 dark:to-warning-dark/60'
+    default:
+      return 'bg-gradient-to-r from-primary via-primary/80 to-primary/60 dark:from-primary dark:via-primary/80 dark:to-primary/60'
+  }
+}
+
 export const EmailDetailModal: React.FC<EmailDetailModalProps> = ({
   email,
   isOpen,
@@ -29,18 +40,18 @@ export const EmailDetailModal: React.FC<EmailDetailModalProps> = ({
       <div className="fixed inset-0 z-50 flex items-start justify-center pt-12 pointer-events-none">
         <div className="bg-white dark:bg-dark-neutral-100 rounded-lg shadow-elevation-4 max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto pointer-events-auto">
           {/* Header */}
-          <div className="sticky top-0 bg-white dark:bg-dark-neutral-100 border-b border-neutral-200 dark:border-dark-neutral-200 p-6 flex items-center justify-between">
+          <div className={`sticky top-0 ${getSeverityHeaderColor(item.severity)} text-white p-6 flex items-center justify-between`}>
             <div className="flex-1 min-w-0">
-              <h2 className="text-heading-2 text-neutral-500 dark:text-dark-neutral-500 truncate">
+              <h2 className="text-heading-2 text-white truncate">
                 {item.subject}
               </h2>
-              <p className="text-small text-neutral-400 dark:text-dark-neutral-300 mt-1">
+              <p className="text-small text-white/80 mt-1">
                 From: {item.from.emailAddress.name || item.from.emailAddress.address}
               </p>
             </div>
             <button
               onClick={onClose}
-              className="ml-4 text-neutral-400 dark:text-dark-neutral-400 hover:text-neutral-500 dark:hover:text-dark-neutral-300 text-2xl leading-none"
+              className="ml-4 text-white/70 hover:text-white text-2xl leading-none transition-colors"
               aria-label="Close"
             >
               ×

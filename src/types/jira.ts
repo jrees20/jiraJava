@@ -45,4 +45,6 @@ export interface JiraActivityItem {
   changedBy: JiraUser
   changedAt: string
   url: string
+  mentionsUser?: boolean
+  userMentionContext?: string
 }

@@ -61,4 +61,6 @@ export interface OutlookActivityItem {
   severity: 'CRITICAL' | 'WARNING' | 'INFO'
   reason: string
   actionUrl?: string
+  mentionsUser?: boolean
+  userMentionContext?: string
 }
